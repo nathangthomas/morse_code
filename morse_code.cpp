@@ -52,6 +52,13 @@ void loop() {
   }
 }
 
+void letterSpace() {delay(600);} //space between letters
+void wordSpace() {delay(1200);} //space between words
+
+void dot() {digitalWrite(codeLight,HIGH); delay(300); digitalWrite(codeLight,LOW); delay(300);}
+void dash() {digitalWrite(codeLight,HIGH); delay(900); digitalWrite(codeLight,LOW); delay(300);} // needs to be 3 times the delay of dot
+
+void ready() {digitalWrite(readyLight,HIGH); delay(1200); digitalWrite(readyLight,LOW); delay(1200);}
 
 void cA() {dot();dash();letterSpace();}
 void cB() {dash();dot();dot();dot();letterSpace();}
@@ -89,8 +96,3 @@ void c7() {dash();dash();dot();dot();dot();letterSpace();}
 void c8() {dash();dash();dash();dot();dot();letterSpace();}
 void c9() {dash();dash();dash();dash();dot();letterSpace();}
 void c0() {dash();dash();dash();dash();dash();letterSpace();}
-void letterSpace() {delay(600);} //space between letters
-void wordSpace() {delay(1200);} //space between words
-void dot() {digitalWrite(codeLight,HIGH); delay(300); digitalWrite(codeLight,LOW); delay(300);}
-void dash() {digitalWrite(codeLight,HIGH); delay(900); digitalWrite(codeLight,LOW); delay(300);} // needs to be 3 times the delay of dot
-void ready() {digitalWrite(readyLight,HIGH); delay(1200); digitalWrite(readyLight,LOW); delay(1200);}
